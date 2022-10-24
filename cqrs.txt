@@ -1,0 +1,67 @@
+CQRS Pattern
+
+CQRS stands for Command Query Responsibility Segregation. It segregates the read and write operations on a data store into queries and commands respectively. Queries perform read operations and return the DTOs without modifying any data. Commands perform writes, updates, or delete operations on the data. This distinction helps manage data access complexity in large applications by making them more decoupled and testable.
+
+However, applications with simple data access requirements might not benefit from CQRS as it may add additional complexity.
+
+Command Query Responsibility Segregation (CQRS) is a pattern that essentially provides guidance around separating the responsibility of reading data and causing a change in a system’s state (for example, sending a confirmation message or writing to a database), and designing objects and architecture accordingly. It was initially devised to help with highly transactional systems such as banking. Greg Young evolved CQRS from Bertrand Meyer’s command-query separation (CQS) strategy, whose most valuable idea, according to Martin Fowler, “is that it’s extremely handy if you can clearly separate methods that change state from those that don’t”
+
+What CQRS adds is the idea of creating entirely separate models for commands and queries.
+
+Mediator Pattern
+
+Mediator pattern helps manage dependencies between objects by preventing them from directly communicating with each other. Instead, the communication happens through a mediator. For example, a service sends its request to the mediator that in turn forwards it to the respective request handler for processing. By having a mediator in between, we can decouple requests from their handlers. The sender does not need to know anything about the handler. Mediator pattern helps implement CQRS. Commands and queries are sent to the mediator that maps them to their respective handlers.
+
+Implementation
+
+Start with adding the following Nuget packages:
+
+For library projects: 
+MediatR
+
+For startup (UI) projects:
+MediatR.Extensions.Microsoft.DependencyInjection
+
+Add MediatR to our project’s DI container and pass the assembly that would contain the commands, queries, and handlers that we will write subsequently to work with our data.
+
+builder.Services.AddMediatR(typeof(Program).Assembly);
+builder.Services.AddMediatR(typeof(DAL.ClassName).Assembly);
+builder.Services.AddMediatR(Assembly.GetExecutingAssembly());
+
+
+CQRS and Mediator patterns are very effective in managing the data access complexity of applications and can help in writing code that is more testable and manageable. It comes with its own set of drawbacks like inability to scaffold models using ORM tools and set of additional classes required to segregate data models and read/write operations.
+
+Applying CQRS Pattern for DbContext and Domain Classes
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
