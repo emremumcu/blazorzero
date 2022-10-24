@@ -25,14 +25,14 @@ BlazorZero> dotnet sln add .\BlazorZero\.
 git init
 git add .
 git commit -m "First Commit"
-git remote add origin https://github.com/repo.git
+git remote add origin https://github.com/emremumcu/blazorzero.git
 git remote -v
 git push -f origin master
 
 # Next Commits
 git add .
 git status
-git commit -m “2. Commit”
+git commit -m "Bug fixes and updates"
 git status
 git push -f origin master
 ```
