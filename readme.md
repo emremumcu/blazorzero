@@ -14,9 +14,9 @@ BlazorZero> dotnet sln add .\BlazorZero\.
 
 # VSCode Commands (Ctrl+Shift+P )
 
-> .NET: Generate Assetst for Build and Debug 
- !!! IF Error: Unable to generate assets to build and debug. OmniSharp server is not running.
- !!! > OmniSharp: Restart OmniSharp
+.NET: Generate Assetst for Build and Debug 
+#IF Error: Unable to generate assets to build and debug. OmniSharp server is not running.
+OmniSharp: Restart OmniSharp
 
 # Git
 
