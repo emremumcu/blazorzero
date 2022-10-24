@@ -8,23 +8,23 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\emumcu2\\.nuget\\packages\\": {},
+    "C:\\Users\\Emre\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\emumcu2\\Desktop\\BlazorZero\\BlazorZero\\BlazorZero.csproj",
+      "projectUniqueName": "C:\\Users\\Emre\\Desktop\\BlazorZero\\BlazorZero\\BlazorZero.csproj",
       "projectName": "BlazorZero",
-      "projectPath": "C:\\Users\\emumcu2\\Desktop\\BlazorZero\\BlazorZero\\BlazorZero.csproj",
-      "packagesPath": "C:\\Users\\emumcu2\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\emumcu2\\Desktop\\BlazorZero\\BlazorZero\\obj\\",
+      "projectPath": "C:\\Users\\Emre\\Desktop\\BlazorZero\\BlazorZero\\BlazorZero.csproj",
+      "packagesPath": "C:\\Users\\Emre\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Emre\\Desktop\\BlazorZero\\BlazorZero\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\emumcu2\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Emre\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -33,7 +33,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://nexus.sgk.intra/repository/nuget-group/index.json": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
